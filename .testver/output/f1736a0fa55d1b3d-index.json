@@ -1,0 +1,12 @@
+[
+  {
+    "testName": "should show error for invalid credentials (5.6s)",
+    "startLine": 0,
+    "endLine": 24
+  },
+  {
+    "testName": "should log in successfully with valid credentials and 2FA (7.0s)",
+    "startLine": 25,
+    "endLine": 28
+  }
+]

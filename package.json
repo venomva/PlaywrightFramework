@@ -1,0 +1,16 @@
+{
+  "name": "testver-playwright-framework",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript test automation framework with Page Objects for Testver Playground",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headless": "npx playwright test --headless",
+    "test:debug": "npx playwright test --debug",
+    "test:report": "npx playwright show-report",
+    "test:login": "npx playwright test tests/login.spec.ts",
+    "test:registration": "npx playwright test tests/registration.spec.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0"
+  }
+}

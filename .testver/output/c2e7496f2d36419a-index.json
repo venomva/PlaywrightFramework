@@ -1,0 +1,7 @@
+[
+  {
+    "testName": "should log in successfully with valid credentials and 2FA (12.0s)",
+    "startLine": 0,
+    "endLine": 17
+  }
+]

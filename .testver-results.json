@@ -1,0 +1,274 @@
+{
+  "config": {
+    "configFile": "E:\\TestverTesting\\Playwright-Backup\\june14\\Playwright\\playwright.config.ts",
+    "rootDir": "E:/TestverTesting/Playwright-Backup/june14/Playwright/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/TestverTesting/Playwright-Backup/june14/Playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "E:/TestverTesting/Playwright-Backup/june14/Playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.60.0",
+    "workers": 11,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "login.spec.ts",
+      "file": "login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication – Login Flow",
+          "file": "login.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should log in successfully with valid credentials and 2FA",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6980,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-16T17:42:37.866Z] [INFO] [LoginSpec] Test setup: initializing page objects\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:37.872Z] [INFO] [LoginSpec] === Starting: successful login with valid credentials and 2FA ===\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:37.874Z] [INFO] [LoginPage] Navigating to login page\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:40.158Z] [DEBUG] [Helpers] Page DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:40.244Z] [INFO] [LoginPage] Login page loaded\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:40.277Z] [INFO] [LoginPage] Login page heading verified\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:40.280Z] [INFO] [LoginPage] Filling credentials for user: admin\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:40.350Z] [INFO] [LoginPage] Clicking Sign In button\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:42.319Z] [INFO] [TwoFactorPage] 2FA page heading verified\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:42.325Z] [INFO] [TwoFactorPage] Filling OTP code: 123456\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:42.352Z] [INFO] [TwoFactorPage] Clicking Verify button\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:43.901Z] [INFO] [HomePage] Home page heading verified\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:43.912Z] [INFO] [HomePage] User \"admin\" is logged in\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:43.935Z] [INFO] [LoginSpec] === Completed: successful login with valid credentials and 2FA ===\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to login page",
+                          "duration": 2405
+                        },
+                        {
+                          "title": "Fill in valid credentials (admin / admin123)",
+                          "duration": 68
+                        },
+                        {
+                          "title": "Submit login form",
+                          "duration": 1108
+                        },
+                        {
+                          "title": "Verify 2FA page is displayed",
+                          "duration": 864
+                        },
+                        {
+                          "title": "Enter OTP code and verify",
+                          "duration": 1136
+                        },
+                        {
+                          "title": "Verify successful login on home page",
+                          "duration": 451
+                        },
+                        {
+                          "title": "Verify URL is home page",
+                          "duration": 22
+                        }
+                      ],
+                      "startTime": "2026-06-16T17:42:36.625Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-2c1a8e0db48569fc131d",
+              "file": "login.spec.ts",
+              "line": 22,
+              "column": 7
+            },
+            {
+              "title": "should show error for invalid credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5619,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-16T17:42:37.604Z] [INFO] [LoginSpec] Test setup: initializing page objects\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:37.607Z] [INFO] [LoginSpec] === Starting: login with invalid credentials ===\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:37.609Z] [INFO] [LoginPage] Navigating to login page\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:40.427Z] [DEBUG] [Helpers] Page DOM content loaded\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:40.508Z] [INFO] [LoginPage] Login page loaded\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:40.544Z] [INFO] [LoginPage] Login page heading verified\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:40.547Z] [INFO] [LoginPage] Filling credentials for user: admin\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:40.615Z] [INFO] [LoginPage] Clicking Sign In button\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:42.330Z] [INFO] [LoginPage] Error message verified\n"
+                        },
+                        {
+                          "text": "[2026-06-16T17:42:42.344Z] [INFO] [LoginSpec] === Completed: login with invalid credentials ===\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to login page",
+                          "duration": 2937
+                        },
+                        {
+                          "title": "Fill in invalid credentials",
+                          "duration": 68
+                        },
+                        {
+                          "title": "Submit login and verify error message",
+                          "duration": 1715
+                        },
+                        {
+                          "title": "Verify still on login page",
+                          "duration": 13
+                        }
+                      ],
+                      "startTime": "2026-06-16T17:42:36.640Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-e9a9d8d5325c4762260c",
+              "file": "login.spec.ts",
+              "line": 68,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-16T17:42:35.469Z",
+    "duration": 9261.992999999999,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

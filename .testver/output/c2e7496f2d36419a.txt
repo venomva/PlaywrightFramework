@@ -1,0 +1,20 @@
+
+Running 1 test using 1 worker
+
+[2026-06-16T17:40:46.516Z] [INFO] [LoginSpec] Test setup: initializing page objects
+[2026-06-16T17:40:46.522Z] [INFO] [LoginSpec] === Starting: successful login with valid credentials and 2FA ===
+[2026-06-16T17:40:46.529Z] [INFO] [LoginPage] Navigating to login page
+[2026-06-16T17:40:54.123Z] [DEBUG] [Helpers] Page DOM content loaded
+[2026-06-16T17:40:54.212Z] [INFO] [LoginPage] Login page loaded
+[2026-06-16T17:40:54.250Z] [INFO] [LoginPage] Login page heading verified
+[2026-06-16T17:40:54.253Z] [INFO] [LoginPage] Filling credentials for user: admin
+[2026-06-16T17:40:54.369Z] [INFO] [LoginPage] Clicking Sign In button
+[2026-06-16T17:40:56.018Z] [INFO] [TwoFactorPage] 2FA page heading verified
+[2026-06-16T17:40:56.023Z] [INFO] [TwoFactorPage] Filling OTP code: 123456
+[2026-06-16T17:40:56.070Z] [INFO] [TwoFactorPage] Clicking Verify button
+[2026-06-16T17:40:57.567Z] [INFO] [HomePage] Home page heading verified
+[2026-06-16T17:40:57.588Z] [INFO] [HomePage] User "admin" is logged in
+[2026-06-16T17:40:57.645Z] [INFO] [LoginSpec] === Completed: successful login with valid credentials and 2FA ===
+  ✓  1 [chromium] › tests\login.spec.ts:22:7 › Authentication – Login Flow › should log in successfully with valid credentials and 2FA (12.0s)
+
+  1 passed (15.7s)

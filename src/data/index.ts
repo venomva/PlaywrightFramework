@@ -1,0 +1,1 @@
+export { LOGIN_CREDENTIALS, OTP_DATA, APP_URLS, SIGNUP_DATA, MESSAGES } from './test-data';

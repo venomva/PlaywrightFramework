@@ -1,0 +1,31 @@
+
+Running 2 tests using 2 workers
+
+[2026-06-16T17:42:37.604Z] [INFO] [LoginSpec] Test setup: initializing page objects
+[2026-06-16T17:42:37.607Z] [INFO] [LoginSpec] === Starting: login with invalid credentials ===
+[2026-06-16T17:42:37.609Z] [INFO] [LoginPage] Navigating to login page
+[2026-06-16T17:42:37.866Z] [INFO] [LoginSpec] Test setup: initializing page objects
+[2026-06-16T17:42:37.872Z] [INFO] [LoginSpec] === Starting: successful login with valid credentials and 2FA ===
+[2026-06-16T17:42:37.874Z] [INFO] [LoginPage] Navigating to login page
+[2026-06-16T17:42:40.158Z] [DEBUG] [Helpers] Page DOM content loaded
+[2026-06-16T17:42:40.244Z] [INFO] [LoginPage] Login page loaded
+[2026-06-16T17:42:40.277Z] [INFO] [LoginPage] Login page heading verified
+[2026-06-16T17:42:40.280Z] [INFO] [LoginPage] Filling credentials for user: admin
+[2026-06-16T17:42:40.350Z] [INFO] [LoginPage] Clicking Sign In button
+[2026-06-16T17:42:40.427Z] [DEBUG] [Helpers] Page DOM content loaded
+[2026-06-16T17:42:40.508Z] [INFO] [LoginPage] Login page loaded
+[2026-06-16T17:42:40.544Z] [INFO] [LoginPage] Login page heading verified
+[2026-06-16T17:42:40.547Z] [INFO] [LoginPage] Filling credentials for user: admin
+[2026-06-16T17:42:40.615Z] [INFO] [LoginPage] Clicking Sign In button
+[2026-06-16T17:42:42.319Z] [INFO] [TwoFactorPage] 2FA page heading verified
+[2026-06-16T17:42:42.325Z] [INFO] [TwoFactorPage] Filling OTP code: 123456
+[2026-06-16T17:42:42.330Z] [INFO] [LoginPage] Error message verified
+[2026-06-16T17:42:42.344Z] [INFO] [LoginSpec] === Completed: login with invalid credentials ===
+[2026-06-16T17:42:42.352Z] [INFO] [TwoFactorPage] Clicking Verify button
+  ✓  2 [chromium] › tests\login.spec.ts:68:7 › Authentication – Login Flow › should show error for invalid credentials (5.6s)
+[2026-06-16T17:42:43.901Z] [INFO] [HomePage] Home page heading verified
+[2026-06-16T17:42:43.912Z] [INFO] [HomePage] User "admin" is logged in
+[2026-06-16T17:42:43.935Z] [INFO] [LoginSpec] === Completed: successful login with valid credentials and 2FA ===
+  ✓  1 [chromium] › tests\login.spec.ts:22:7 › Authentication – Login Flow › should log in successfully with valid credentials and 2FA (7.0s)
+
+  2 passed (9.3s)
