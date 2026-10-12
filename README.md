@@ -1,6 +1,6 @@
 # Testver Playground – Playwright TypeScript Framework
 
-A Playwright test automation framework using the **TypeScript** and the **Page Object Model** pattern for the [Testver Playground](https://testplay.testver.com/).
+A Playwright test automation framework using **TypeScript** and the **Page Object Model** pattern for the [Testver Playground](https://testplay.testver.com/).
 
 ## 📁 Project Structure
 
